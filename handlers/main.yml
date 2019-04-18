@@ -6,9 +6,9 @@
   when:
     - ansible_virtualization_type != "docker"
 
-- name: restart jupyter-notebook
+- name: restart anaconda
   service:
-    name: jupyter-notebook
+    name: anaconda
     state: restarted
   when:
     - ansible_virtualization_type != "docker"
